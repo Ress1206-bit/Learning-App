@@ -37,6 +37,8 @@ class ContentModel: ObservableObject {
         
         getLocalData()
         
+        getRemoteData()
+        
     }
     
     // MARK: - Data methods
@@ -77,6 +79,52 @@ class ContentModel: ObservableObject {
             print("Couldn't parse style data")
         }
         
+    }
+    
+    func getRemoteData() {
+        
+        //String path
+        let urlString = "https://ress1206-bit.github.io/learningapp-data/data2.json"
+        
+        
+        //Creare url object URL(string:) *Not* URL (fileURLWithPath:)
+        let url = URL(string: urlString)
+        
+        guard url != nil else {
+            //Couldn't create url
+            return
+        }
+        
+        //Create a URLRequest object
+        let request = URLRequest(url: url!)
+        
+        //Get the session and kick off the task
+        let session = URLSession.shared
+        
+        let dataTask = session.dataTask(with: request) { (data, response, error) in
+            //Check if there is an error
+            guard error == nil else {
+                // There was an error
+                return
+            }
+            
+            do{
+                //Create json decoder
+                let decoder = JSONDecoder()
+                
+                //Decode
+                let modules = try decoder.decode([Module].self, from: data!)
+                
+                //Append parsed modules into modules property
+                self.modules += modules
+            }
+            catch{
+                //Couldn't parse jsoon
+            }
+            
+        }
+        
+        dataTask.resume()
     }
     
     // MARK: - Module navigation methods
