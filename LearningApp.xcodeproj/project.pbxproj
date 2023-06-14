@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6B127E902A37E1E300C550BA /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B127E8F2A37E1E300C550BA /* RectangleCard.swift */; };
 		6B127E922A37E78800C550BA /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B127E912A37E78800C550BA /* TestView.swift */; };
+		6B127E942A3944FB00C550BA /* TestResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B127E932A3944FB00C550BA /* TestResultView.swift */; };
 		6B8E96012A3561E900788FCC /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E96002A3561E900788FCC /* LearningApp.swift */; };
 		6B8E96032A3561E900788FCC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E96022A3561E900788FCC /* HomeView.swift */; };
 		6B8E96052A3561EB00788FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8E96042A3561EB00788FCC /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		6B127E8F2A37E1E300C550BA /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		6B127E912A37E78800C550BA /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		6B127E932A3944FB00C550BA /* TestResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultView.swift; sourceTree = "<group>"; };
 		6B8E95FD2A3561E900788FCC /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8E96002A3561E900788FCC /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
 		6B8E96022A3561E900788FCC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				6BFF0CF92A363E210071117A /* ContentViewRow.swift */,
 				6BFF0CFB2A36415A0071117A /* ContentDetailView.swift */,
 				6B127E912A37E78800C550BA /* TestView.swift */,
+				6B127E932A3944FB00C550BA /* TestResultView.swift */,
 				6BE00EF52A37C1EC007E508E /* CodeTextView.swift */,
 				6B127E8F2A37E1E300C550BA /* RectangleCard.swift */,
 			);
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B127E922A37E78800C550BA /* TestView.swift in Sources */,
+				6B127E942A3944FB00C550BA /* TestResultView.swift in Sources */,
 				6B8E96032A3561E900788FCC /* HomeView.swift in Sources */,
 				6BFF0CF62A3630D60071117A /* HomeViewRow.swift in Sources */,
 				6BFF0CF82A3636920071117A /* ContentView.swift in Sources */,
